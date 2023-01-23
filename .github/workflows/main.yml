@@ -29,6 +29,8 @@ jobs:
 
   check_version:
     name: Tag version bump
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     # run only on pushes, not PRs
     if: ${{ github.event_name == 'push' && github.base_ref == null }}

@@ -2,44 +2,42 @@
 
 [[package]]
 name = "ampel-core"
-version = "0.8.6"
+version = "0.8.10"
 description = "Alice in Modular Provenance-Enabled Land"
 category = "main"
 optional = false
-python-versions = ">=3.10,<3.12"
+python-versions = "<4.0,>=3.10"
 files = [
-    {file = "ampel_core-0.8.6-py3-none-any.whl", hash = "sha256:c3132fbe9b585a33c4e747d4d79e4ba454368ecb38e917ddc6b9c01c196c89d4"},
-    {file = "ampel_core-0.8.6.tar.gz", hash = "sha256:d0fca9bc7ef33223f962da275b7008aad89355e3d20d5294b97ab8cb02e38126"},
+    {file = "ampel_core-0.8.10-py3-none-any.whl", hash = "sha256:328731b3296d99a67211be8f5d469e5b1c7c01a3d8e569c6a86f2f1b971b9bd0"},
+    {file = "ampel_core-0.8.10.tar.gz", hash = "sha256:ed946c889fad8f0c89fbaf6069510a0e979d1a185301e30d395e0d23c8b1a9f1"},
 ]
 
 [package.dependencies]
-ampel-interface = ">=0.8.7,<0.9.0"
+ampel-interface = ">=0.8.12,<0.9.0"
 appdirs = ">=1.4.4,<2.0.0"
 prometheus-client = ">=0.16,<0.17"
 psutil = ">=5.8.0,<6.0.0"
-pydantic = ">=1.9.0,<2.0.0"
 pymongo = ">=4.0,<5.0"
 requests = ">=2.0,<3.0"
-schedule = ">=1.0.0,<2.0.0"
+schedule = ">=1,<1.2.2"
 sjcl = ">=0.2.1,<0.3.0"
 xxhash = ">=3.0.0,<4.0.0"
 yq = ">=3.0.0,<4.0.0"
 
 [package.extras]
-docs = ["Sphinx (>=6.1.2,<6.2.0)", "sphinx-autodoc-typehints (>=1.11.1,<2.0.0)", "sphinx-press-theme (>=0.5.1,<0.9.0)", "tomlkit (>=0.11.0,<0.12.0)"]
-server = ["fastapi (>=0.95,<0.96)", "uvicorn[standard] (>=0.21.1,<0.22.0)"]
+server = ["fastapi (>=0.95)", "uvicorn[standard] (>=0.21.1)"]
 slack = ["slack-sdk (>=3.18.1,<4.0.0)"]
 
 [[package]]
 name = "ampel-interface"
-version = "0.8.7"
+version = "0.8.12"
 description = "Base classes for the Ampel analysis platform"
 category = "main"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "ampel_interface-0.8.7-py3-none-any.whl", hash = "sha256:2747bd0b52838dde502038b99cecbbeb48e0e3c7c1f113369576ee0818ca7a54"},
-    {file = "ampel_interface-0.8.7.tar.gz", hash = "sha256:a54dfb5e8baa966be84573fdef34b2e4a6b94bc78e86b785deb16183da00f5e6"},
+    {file = "ampel_interface-0.8.12-py3-none-any.whl", hash = "sha256:5b83dffaa5563cfbb8490371a164a4af69fc616af6cdae6701248b7c344aa3ba"},
+    {file = "ampel_interface-0.8.12.tar.gz", hash = "sha256:b40b6347468eb7a15a64fe2b97ff9e09e9ba6b3613f67a7d79d97711f594683e"},
 ]
 
 [package.dependencies]
@@ -49,7 +47,7 @@ ujson = ">=5.1.0,<6.0.0"
 xxhash = ">=3.0.0,<4.0.0"
 
 [package.extras]
-docs = ["Sphinx (>=6.0.0,<7.0.0)", "sphinx-autodoc-typehints (>=1.11.1,<2.0.0)", "tomlkit (>=0.11.0,<0.12.0)"]
+docs = ["Sphinx (>=6.0.0,<7.0.0)", "sphinx-autodoc-typehints (>=1.11.1,<2.0.0)", "tomlkit (>=0.12.0,<0.13.0)"]
 
 [[package]]
 name = "ampel-ipython"
@@ -803,5 +801,5 @@ tests = ["coverage", "flake8", "wheel"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.10,<3.12"
-content-hash = "763b8d528d3ee2c6487a703fe1fd397525184a3a7e8d2e550d883de053817b44"
+python-versions = ">=3.14,<3.15"
+content-hash = "59c3b755b7d8453731ba0641fe3b901d227e82eb95f80d8af3399e1e14f39d4a"

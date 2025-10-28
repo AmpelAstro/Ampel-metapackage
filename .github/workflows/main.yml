@@ -40,7 +40,7 @@ jobs:
     steps:
     - uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 24
     - run: npm install toml@3.0.0
     - name: Ensure tag for version bump
       id: check
